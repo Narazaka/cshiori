@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>cshiori: cshiori.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cshiori
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('cshiori_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">cshiori.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cshiori_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef CSHIORI_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define CSHIORI_H</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define LF &quot;\r\n&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define LF_LEN 2</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3">   30</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3">cshiori_request_method</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3ac157bdf0b85a40d2619cbc8bc1ae5fe2">   31</a></span>&#160;    <a class="code" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>, </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3a12a8dcf59c16b5aadfda3a08ba67d529">   32</a></span>&#160;    <a class="code" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3a12a8dcf59c16b5aadfda3a08ba67d529">GET</a>, </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3a396912289122c12cc2db4ee6a7eb150e">   33</a></span>&#160;    <a class="code" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3a396912289122c12cc2db4ee6a7eb150e">NOTIFY</a> </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="cshiori_8h.html#a5bc9b2e62314abd55bc3e96435b016fb">   39</a></span>&#160;<span class="preprocessor">#define CSHIORI_REQUEST_MESSAGE_REFERENCE_SIZE 100</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcshiori__request__message.html">cshiori_request_message</a>{</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#a9e553291fa07caae1d6f2d5d916c77a6">   48</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3">cshiori_request_method</a> <a class="code" href="structcshiori__request__message.html#a9e553291fa07caae1d6f2d5d916c77a6">method</a>; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#a50066d0ba6c43ad79d272ca6127874b7">   49</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__request__message.html#a50066d0ba6c43ad79d272ca6127874b7">version</a>; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">/* common headers */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#ab58cb8f267145b6d2b57e970c9e139b2">   51</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__request__message.html#ab58cb8f267145b6d2b57e970c9e139b2">id</a>; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#a522b02cd76b2cd846020e93a6aa0e3d3">   52</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__request__message.html#a522b02cd76b2cd846020e93a6aa0e3d3">sender</a>; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#a1bebf3f369216f7f53de21b8974d613d">   53</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__request__message.html#a1bebf3f369216f7f53de21b8974d613d">charset</a>; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#a023be362c41b528d1e355748e28f4415">   54</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__request__message.html#a023be362c41b528d1e355748e28f4415">reference</a>[<a class="code" href="cshiori_8h.html#a5bc9b2e62314abd55bc3e96435b016fb">CSHIORI_REQUEST_MESSAGE_REFERENCE_SIZE</a>]; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#ab373fed1e7a9c6dc083f25dc13b241c2">   55</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__request__message.html#ab373fed1e7a9c6dc083f25dc13b241c2">security_level</a>; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#a5d4b5ebcd1b976e9248838fe55133a67">   56</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__request__message.html#a5d4b5ebcd1b976e9248838fe55133a67">status</a>; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#a72215c4363ad9e5ba2cd343f3485be3c">   57</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__request__message.html#a72215c4363ad9e5ba2cd343f3485be3c">base_id</a>; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">/* all headers */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#a5d1726d731d5076fda2bf52a1e599ae9">   59</a></span>&#160;    <span class="keywordtype">char</span> **<a class="code" href="structcshiori__request__message.html#a5d1726d731d5076fda2bf52a1e599ae9">names</a>; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#a2dc6b9828d1cde4692b67e46368af8b5">   60</a></span>&#160;    <span class="keywordtype">char</span> **<a class="code" href="structcshiori__request__message.html#a2dc6b9828d1cde4692b67e46368af8b5">values</a>; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structcshiori__request__message.html#ad7d9d4c6f6a7aa1c9630df2f36a43ff7">   61</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="structcshiori__request__message.html#ad7d9d4c6f6a7aa1c9630df2f36a43ff7">header_size</a>; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="cshiori_8h.html#adc31d4da21a9c10bc33b1ef0926e14d6">   67</a></span>&#160;<span class="preprocessor">#define CSHIORI_RESPONSE_MESSAGE_REFERENCE_SIZE 100</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="structcshiori__response__message.html">   74</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcshiori__response__message.html">cshiori_response_message</a>{</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structcshiori__response__message.html#af67028c72a2fb485a732c4ce86690924">   75</a></span>&#160;    <span class="keywordtype">short</span> <a class="code" href="structcshiori__response__message.html#af67028c72a2fb485a732c4ce86690924">status_code</a>; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="structcshiori__response__message.html#a20c08ba30dd3e4b90f2996bce6a932a7">   76</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__response__message.html#a20c08ba30dd3e4b90f2996bce6a932a7">version</a>; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">/* common headers */</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structcshiori__response__message.html#ab79f2c0d3d09c4e84c50180d0a1839f9">   78</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__response__message.html#ab79f2c0d3d09c4e84c50180d0a1839f9">value</a>; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structcshiori__response__message.html#a4c4a06f19d981a184d8c2b5b40508cf4">   79</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__response__message.html#a4c4a06f19d981a184d8c2b5b40508cf4">sender</a>; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structcshiori__response__message.html#a926c5ced06ede9934ad29da81b01cebc">   80</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__response__message.html#a926c5ced06ede9934ad29da81b01cebc">charset</a>; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structcshiori__response__message.html#a317784f7274813d673995f5d50b480f8">   81</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structcshiori__response__message.html#a317784f7274813d673995f5d50b480f8">reference</a>[<a class="code" href="cshiori_8h.html#adc31d4da21a9c10bc33b1ef0926e14d6">CSHIORI_RESPONSE_MESSAGE_REFERENCE_SIZE</a>]; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">//  char **names;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">//  char **values;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">//  size_t header_size;</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="cshiori_8h.html#a709d7a3c40706c55cf579e1a4dc9bf25">cshiori_load</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dirpath, <span class="keywordtype">bool</span> (*<a class="code" href="shiori_8c.html#ab4372ee350092f56ff55f9642737ccf5">load</a>)(<span class="keyword">const</span> <span class="keywordtype">char</span>*));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="cshiori_8h.html#adce1e9b2ab23c30d118104d2e0f291b1">cshiori_request</a>(<span class="keywordtype">char</span>** <span class="keyword">const</span> lines, <span class="keyword">const</span> <span class="keywordtype">size_t</span> lines_length, <span class="keyword">struct</span> <a class="code" href="structcshiori__response__message.html">cshiori_response_message</a>* (*<a class="code" href="shiori_8c.html#a0cd1edda97e492ea49b0e0aa1fe67a71">request</a>)(<span class="keyword">struct</span> <a class="code" href="structcshiori__request__message.html">cshiori_request_message</a>*, <span class="keyword">struct</span> <a class="code" href="structcshiori__response__message.html">cshiori_response_message</a>*));</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="cshiori_8h.html#a667d7b471045e1c77f0a611cb628d1a8">cshiori_unload</a>(<span class="keywordtype">bool</span> (*<a class="code" href="shiori_8c.html#a36a6fa9eefebca2cd43fac8666e2edf4">unload</a>)(<span class="keywordtype">void</span>));</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">struct </span><a class="code" href="structcshiori__request__message.html">cshiori_request_message</a>* <a class="code" href="cshiori_8h.html#a49ec2ae50916eb4f949c2bc7a3bcf21e">cshiori_request_message_new</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cshiori_8h.html#a4b4d35465a67de0257f40df8f3fd1e5f">cshiori_request_message_delete</a>(<span class="keyword">struct</span> <a class="code" href="structcshiori__request__message.html">cshiori_request_message</a>* req);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="cshiori_8h.html#a6cf8ad5d0d364873602f99e97afa49e9">cshiori_request_message_get</a>(<span class="keyword">struct</span> <a class="code" href="structcshiori__request__message.html">cshiori_request_message</a>* req, <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> name);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="cshiori_8h.html#a1ae6d4645ad048eb0b2b15c3b7178da6">cshiori_request_message_set</a>(<span class="keyword">struct</span> <a class="code" href="structcshiori__request__message.html">cshiori_request_message</a>* req, <span class="keywordtype">char</span>* <span class="keyword">const</span> name, <span class="keywordtype">char</span>* <span class="keyword">const</span> value);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">struct </span><a class="code" href="structcshiori__response__message.html">cshiori_response_message</a>* <a class="code" href="cshiori_8h.html#aa991669e994b654522d128fc1964ee5e">cshiori_response_message_new</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cshiori_8h.html#afa9a8250e3a0af6ab19f1161d6dea8f5">cshiori_response_message_delete</a>(<span class="keyword">struct</span> <a class="code" href="structcshiori__response__message.html">cshiori_response_message</a>* res);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">void cshiori_response_message_get(struct cshiori_response_message* res, const char* const name);</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">void cshiori_response_message_set(struct cshiori_response_message* res, const char* const name, const char* const value);</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="cshiori_8h.html#ae6e03f72dc17e197a80f4465b6031554">  208</a></span>&#160;<span class="preprocessor">#define CSHIORI_SHIORI_REQUEST_PARSE_HEADER_UNIT_SIZE 10</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keyword">struct </span><a class="code" href="structcshiori__request__message.html">cshiori_request_message</a>* <a class="code" href="cshiori_8h.html#ab6aa7d1c31e5881cbfd0ca8d60da27e5">cshiori_shiori_request_parse</a>(<span class="keywordtype">char</span>** <span class="keyword">const</span> lines, <span class="keyword">const</span> <span class="keywordtype">size_t</span> lines_length);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="cshiori_8h.html#af00ecf3b1b5e5f84e107a1529e264f77">cshiori_shiori_request_build</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structcshiori__request__message.html">cshiori_request_message</a>* <span class="keyword">const</span> req);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="cshiori_8h.html#a02ce3763824524b2db50e12216b04a6a">cshiori_shiori_response_build</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structcshiori__response__message.html">cshiori_response_message</a>* <span class="keyword">const</span> res);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="cshiori_8h.html#ad35d3f40d826093525cf8a01c76dd5ea">cshiori_shiori_response_build_bad_request</a>();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="cshiori_8h.html#a38d8a4be25b4395b2e74d10e5c98af12">cshiori_shiori_response_build_internal_server_error</a>();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="structcshiori__request__message_html_a9e553291fa07caae1d6f2d5d916c77a6"><div class="ttname"><a href="structcshiori__request__message.html#a9e553291fa07caae1d6f2d5d916c77a6">cshiori_request_message::method</a></div><div class="ttdeci">enum cshiori_request_method method</div><div class="ttdef"><b>Definition:</b> cshiori.h:48</div></div>
+<div class="ttc" id="cshiori_8h_html_af00ecf3b1b5e5f84e107a1529e264f77"><div class="ttname"><a href="cshiori_8h.html#af00ecf3b1b5e5f84e107a1529e264f77">cshiori_shiori_request_build</a></div><div class="ttdeci">char * cshiori_shiori_request_build(const struct cshiori_request_message *const req)</div><div class="ttdoc">SHIORI/3.x Requestをビルドします。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:211</div></div>
+<div class="ttc" id="cshiori_8h_html_a49ec2ae50916eb4f949c2bc7a3bcf21e"><div class="ttname"><a href="cshiori_8h.html#a49ec2ae50916eb4f949c2bc7a3bcf21e">cshiori_request_message_new</a></div><div class="ttdeci">struct cshiori_request_message * cshiori_request_message_new(void)</div><div class="ttdoc">SHIORI/3.x Requestをmallocします。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:23</div></div>
+<div class="ttc" id="structcshiori__request__message_html"><div class="ttname"><a href="structcshiori__request__message.html">cshiori_request_message</a></div><div class="ttdoc">SHIORI/3.x Request. </div><div class="ttdef"><b>Definition:</b> cshiori.h:47</div></div>
+<div class="ttc" id="cshiori_8h_html_a1ae6d4645ad048eb0b2b15c3b7178da6"><div class="ttname"><a href="cshiori_8h.html#a1ae6d4645ad048eb0b2b15c3b7178da6">cshiori_request_message_set</a></div><div class="ttdeci">bool cshiori_request_message_set(struct cshiori_request_message *req, char *const name, char *const value)</div><div class="ttdoc">SHIORI/3.x Requestのヘッダを設定します。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:70</div></div>
+<div class="ttc" id="cshiori_8h_html_aab3f870d0c86f37d7ab29b60deb392a3a12a8dcf59c16b5aadfda3a08ba67d529"><div class="ttname"><a href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3a12a8dcf59c16b5aadfda3a08ba67d529">GET</a></div><div class="ttdef"><b>Definition:</b> cshiori.h:32</div></div>
+<div class="ttc" id="cshiori_8h_html_aab3f870d0c86f37d7ab29b60deb392a3"><div class="ttname"><a href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3">cshiori_request_method</a></div><div class="ttdeci">cshiori_request_method</div><div class="ttdoc">SHIORI/3.x Request METHOD. </div><div class="ttdef"><b>Definition:</b> cshiori.h:30</div></div>
+<div class="ttc" id="structcshiori__request__message_html_a1bebf3f369216f7f53de21b8974d613d"><div class="ttname"><a href="structcshiori__request__message.html#a1bebf3f369216f7f53de21b8974d613d">cshiori_request_message::charset</a></div><div class="ttdeci">char * charset</div><div class="ttdef"><b>Definition:</b> cshiori.h:53</div></div>
+<div class="ttc" id="structcshiori__request__message_html_a72215c4363ad9e5ba2cd343f3485be3c"><div class="ttname"><a href="structcshiori__request__message.html#a72215c4363ad9e5ba2cd343f3485be3c">cshiori_request_message::base_id</a></div><div class="ttdeci">char * base_id</div><div class="ttdef"><b>Definition:</b> cshiori.h:57</div></div>
+<div class="ttc" id="cshiori_8h_html_a38d8a4be25b4395b2e74d10e5c98af12"><div class="ttname"><a href="cshiori_8h.html#a38d8a4be25b4395b2e74d10e5c98af12">cshiori_shiori_response_build_internal_server_error</a></div><div class="ttdeci">char * cshiori_shiori_response_build_internal_server_error()</div><div class="ttdoc">SHIORI/3.x Response 500 Internal Server Errorをビルドします。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:335</div></div>
+<div class="ttc" id="structcshiori__request__message_html_a50066d0ba6c43ad79d272ca6127874b7"><div class="ttname"><a href="structcshiori__request__message.html#a50066d0ba6c43ad79d272ca6127874b7">cshiori_request_message::version</a></div><div class="ttdeci">char * version</div><div class="ttdef"><b>Definition:</b> cshiori.h:49</div></div>
+<div class="ttc" id="structcshiori__response__message_html_af67028c72a2fb485a732c4ce86690924"><div class="ttname"><a href="structcshiori__response__message.html#af67028c72a2fb485a732c4ce86690924">cshiori_response_message::status_code</a></div><div class="ttdeci">short status_code</div><div class="ttdef"><b>Definition:</b> cshiori.h:75</div></div>
+<div class="ttc" id="cshiori_8h_html_a5bc9b2e62314abd55bc3e96435b016fb"><div class="ttname"><a href="cshiori_8h.html#a5bc9b2e62314abd55bc3e96435b016fb">CSHIORI_REQUEST_MESSAGE_REFERENCE_SIZE</a></div><div class="ttdeci">#define CSHIORI_REQUEST_MESSAGE_REFERENCE_SIZE</div><div class="ttdoc">cshiori_request_message で配列参照可能なreferenceのサイズ </div><div class="ttdef"><b>Definition:</b> cshiori.h:39</div></div>
+<div class="ttc" id="cshiori_8h_html_a6cf8ad5d0d364873602f99e97afa49e9"><div class="ttname"><a href="cshiori_8h.html#a6cf8ad5d0d364873602f99e97afa49e9">cshiori_request_message_get</a></div><div class="ttdeci">char * cshiori_request_message_get(struct cshiori_request_message *req, const char *const name)</div><div class="ttdoc">SHIORI/3.x Requestのヘッダを取得します。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:59</div></div>
+<div class="ttc" id="structcshiori__response__message_html_a926c5ced06ede9934ad29da81b01cebc"><div class="ttname"><a href="structcshiori__response__message.html#a926c5ced06ede9934ad29da81b01cebc">cshiori_response_message::charset</a></div><div class="ttdeci">char * charset</div><div class="ttdef"><b>Definition:</b> cshiori.h:80</div></div>
+<div class="ttc" id="structcshiori__request__message_html_ab58cb8f267145b6d2b57e970c9e139b2"><div class="ttname"><a href="structcshiori__request__message.html#ab58cb8f267145b6d2b57e970c9e139b2">cshiori_request_message::id</a></div><div class="ttdeci">char * id</div><div class="ttdef"><b>Definition:</b> cshiori.h:51</div></div>
+<div class="ttc" id="structcshiori__request__message_html_ab373fed1e7a9c6dc083f25dc13b241c2"><div class="ttname"><a href="structcshiori__request__message.html#ab373fed1e7a9c6dc083f25dc13b241c2">cshiori_request_message::security_level</a></div><div class="ttdeci">char * security_level</div><div class="ttdef"><b>Definition:</b> cshiori.h:55</div></div>
+<div class="ttc" id="cshiori_8h_html_afa9a8250e3a0af6ab19f1161d6dea8f5"><div class="ttname"><a href="cshiori_8h.html#afa9a8250e3a0af6ab19f1161d6dea8f5">cshiori_response_message_delete</a></div><div class="ttdeci">void cshiori_response_message_delete(struct cshiori_response_message *res)</div><div class="ttdoc">SHIORI/3.x Responseをfreeします。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:110</div></div>
+<div class="ttc" id="shiori_8c_html_a36a6fa9eefebca2cd43fac8666e2edf4"><div class="ttname"><a href="shiori_8c.html#a36a6fa9eefebca2cd43fac8666e2edf4">unload</a></div><div class="ttdeci">SHIORI_EXPORT BOOL SHIORI_CALL unload(void)</div><div class="ttdoc">モジュール切り離し直前に呼ばれる </div><div class="ttdef"><b>Definition:</b> shiori.c:65</div></div>
+<div class="ttc" id="structcshiori__request__message_html_a023be362c41b528d1e355748e28f4415"><div class="ttname"><a href="structcshiori__request__message.html#a023be362c41b528d1e355748e28f4415">cshiori_request_message::reference</a></div><div class="ttdeci">char * reference[CSHIORI_REQUEST_MESSAGE_REFERENCE_SIZE]</div><div class="ttdef"><b>Definition:</b> cshiori.h:54</div></div>
+<div class="ttc" id="structcshiori__request__message_html_a522b02cd76b2cd846020e93a6aa0e3d3"><div class="ttname"><a href="structcshiori__request__message.html#a522b02cd76b2cd846020e93a6aa0e3d3">cshiori_request_message::sender</a></div><div class="ttdeci">char * sender</div><div class="ttdef"><b>Definition:</b> cshiori.h:52</div></div>
+<div class="ttc" id="structcshiori__request__message_html_a5d4b5ebcd1b976e9248838fe55133a67"><div class="ttname"><a href="structcshiori__request__message.html#a5d4b5ebcd1b976e9248838fe55133a67">cshiori_request_message::status</a></div><div class="ttdeci">char * status</div><div class="ttdef"><b>Definition:</b> cshiori.h:56</div></div>
+<div class="ttc" id="structcshiori__response__message_html"><div class="ttname"><a href="structcshiori__response__message.html">cshiori_response_message</a></div><div class="ttdoc">SHIORI/3.x Response. </div><div class="ttdef"><b>Definition:</b> cshiori.h:74</div></div>
+<div class="ttc" id="cshiori_8h_html_adce1e9b2ab23c30d118104d2e0f291b1"><div class="ttname"><a href="cshiori_8h.html#adce1e9b2ab23c30d118104d2e0f291b1">cshiori_request</a></div><div class="ttdeci">char * cshiori_request(char **const lines, const size_t lines_length, struct cshiori_response_message *(*request)(struct cshiori_request_message *, struct cshiori_response_message *))</div><div class="ttdoc">SHIORI/3.x request. </div><div class="ttdef"><b>Definition:</b> cshiori.c:7</div></div>
+<div class="ttc" id="cshiori_8h_html_ad35d3f40d826093525cf8a01c76dd5ea"><div class="ttname"><a href="cshiori_8h.html#ad35d3f40d826093525cf8a01c76dd5ea">cshiori_shiori_response_build_bad_request</a></div><div class="ttdeci">char * cshiori_shiori_response_build_bad_request()</div><div class="ttdoc">SHIORI/3.x Response 400 Bad Requestをビルドします。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:325</div></div>
+<div class="ttc" id="structcshiori__request__message_html_a5d1726d731d5076fda2bf52a1e599ae9"><div class="ttname"><a href="structcshiori__request__message.html#a5d1726d731d5076fda2bf52a1e599ae9">cshiori_request_message::names</a></div><div class="ttdeci">char ** names</div><div class="ttdef"><b>Definition:</b> cshiori.h:59</div></div>
+<div class="ttc" id="structcshiori__response__message_html_a4c4a06f19d981a184d8c2b5b40508cf4"><div class="ttname"><a href="structcshiori__response__message.html#a4c4a06f19d981a184d8c2b5b40508cf4">cshiori_response_message::sender</a></div><div class="ttdeci">char * sender</div><div class="ttdef"><b>Definition:</b> cshiori.h:79</div></div>
+<div class="ttc" id="cshiori_8h_html_aab3f870d0c86f37d7ab29b60deb392a3ac157bdf0b85a40d2619cbc8bc1ae5fe2"><div class="ttname"><a href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a></div><div class="ttdef"><b>Definition:</b> cshiori.h:31</div></div>
+<div class="ttc" id="structcshiori__response__message_html_a20c08ba30dd3e4b90f2996bce6a932a7"><div class="ttname"><a href="structcshiori__response__message.html#a20c08ba30dd3e4b90f2996bce6a932a7">cshiori_response_message::version</a></div><div class="ttdeci">char * version</div><div class="ttdef"><b>Definition:</b> cshiori.h:76</div></div>
+<div class="ttc" id="cshiori_8h_html_ab6aa7d1c31e5881cbfd0ca8d60da27e5"><div class="ttname"><a href="cshiori_8h.html#ab6aa7d1c31e5881cbfd0ca8d60da27e5">cshiori_shiori_request_parse</a></div><div class="ttdeci">struct cshiori_request_message * cshiori_shiori_request_parse(char **const lines, const size_t lines_length)</div><div class="ttdoc">SHIORI/3.x Requestをパースします。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:120</div></div>
+<div class="ttc" id="shiori_8c_html_a0cd1edda97e492ea49b0e0aa1fe67a71"><div class="ttname"><a href="shiori_8c.html#a0cd1edda97e492ea49b0e0aa1fe67a71">request</a></div><div class="ttdeci">SHIORI_EXPORT MEMORY_HANDLE SHIORI_CALL request(const MEMORY_HANDLE h, long *len)</div><div class="ttdoc">偽AIリクエスト </div><div class="ttdef"><b>Definition:</b> shiori.c:25</div></div>
+<div class="ttc" id="shiori_8c_html_ab4372ee350092f56ff55f9642737ccf5"><div class="ttname"><a href="shiori_8c.html#ab4372ee350092f56ff55f9642737ccf5">load</a></div><div class="ttdeci">SHIORI_EXPORT BOOL SHIORI_CALL load(const MEMORY_HANDLE h, long len)</div><div class="ttdoc">モジュール読み込み直後に呼ばれる </div><div class="ttdef"><b>Definition:</b> shiori.c:16</div></div>
+<div class="ttc" id="structcshiori__response__message_html_a317784f7274813d673995f5d50b480f8"><div class="ttname"><a href="structcshiori__response__message.html#a317784f7274813d673995f5d50b480f8">cshiori_response_message::reference</a></div><div class="ttdeci">char * reference[CSHIORI_RESPONSE_MESSAGE_REFERENCE_SIZE]</div><div class="ttdef"><b>Definition:</b> cshiori.h:81</div></div>
+<div class="ttc" id="cshiori_8h_html_a667d7b471045e1c77f0a611cb628d1a8"><div class="ttname"><a href="cshiori_8h.html#a667d7b471045e1c77f0a611cb628d1a8">cshiori_unload</a></div><div class="ttdeci">bool cshiori_unload(bool(*unload)(void))</div><div class="ttdoc">SHIORI/3.x unload. </div><div class="ttdef"><b>Definition:</b> cshiori.c:19</div></div>
+<div class="ttc" id="cshiori_8h_html_a709d7a3c40706c55cf579e1a4dc9bf25"><div class="ttname"><a href="cshiori_8h.html#a709d7a3c40706c55cf579e1a4dc9bf25">cshiori_load</a></div><div class="ttdeci">bool cshiori_load(const char *dirpath, bool(*load)(const char *))</div><div class="ttdoc">SHIORI/3.x load. </div><div class="ttdef"><b>Definition:</b> cshiori.c:3</div></div>
+<div class="ttc" id="cshiori_8h_html_a4b4d35465a67de0257f40df8f3fd1e5f"><div class="ttname"><a href="cshiori_8h.html#a4b4d35465a67de0257f40df8f3fd1e5f">cshiori_request_message_delete</a></div><div class="ttdeci">void cshiori_request_message_delete(struct cshiori_request_message *req)</div><div class="ttdoc">SHIORI/3.x Requestをfreeします。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:41</div></div>
+<div class="ttc" id="structcshiori__request__message_html_a2dc6b9828d1cde4692b67e46368af8b5"><div class="ttname"><a href="structcshiori__request__message.html#a2dc6b9828d1cde4692b67e46368af8b5">cshiori_request_message::values</a></div><div class="ttdeci">char ** values</div><div class="ttdef"><b>Definition:</b> cshiori.h:60</div></div>
+<div class="ttc" id="structcshiori__request__message_html_ad7d9d4c6f6a7aa1c9630df2f36a43ff7"><div class="ttname"><a href="structcshiori__request__message.html#ad7d9d4c6f6a7aa1c9630df2f36a43ff7">cshiori_request_message::header_size</a></div><div class="ttdeci">size_t header_size</div><div class="ttdef"><b>Definition:</b> cshiori.h:61</div></div>
+<div class="ttc" id="cshiori_8h_html_a02ce3763824524b2db50e12216b04a6a"><div class="ttname"><a href="cshiori_8h.html#a02ce3763824524b2db50e12216b04a6a">cshiori_shiori_response_build</a></div><div class="ttdeci">char * cshiori_shiori_response_build(const struct cshiori_response_message *const res)</div><div class="ttdoc">SHIORI/3.x Responseをビルドします。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:266</div></div>
+<div class="ttc" id="cshiori_8h_html_adc31d4da21a9c10bc33b1ef0926e14d6"><div class="ttname"><a href="cshiori_8h.html#adc31d4da21a9c10bc33b1ef0926e14d6">CSHIORI_RESPONSE_MESSAGE_REFERENCE_SIZE</a></div><div class="ttdeci">#define CSHIORI_RESPONSE_MESSAGE_REFERENCE_SIZE</div><div class="ttdoc">cshiori_response_message で配列参照可能なreferenceのサイズ </div><div class="ttdef"><b>Definition:</b> cshiori.h:67</div></div>
+<div class="ttc" id="structcshiori__response__message_html_ab79f2c0d3d09c4e84c50180d0a1839f9"><div class="ttname"><a href="structcshiori__response__message.html#ab79f2c0d3d09c4e84c50180d0a1839f9">cshiori_response_message::value</a></div><div class="ttdeci">char * value</div><div class="ttdef"><b>Definition:</b> cshiori.h:78</div></div>
+<div class="ttc" id="cshiori_8h_html_aab3f870d0c86f37d7ab29b60deb392a3a396912289122c12cc2db4ee6a7eb150e"><div class="ttname"><a href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3a396912289122c12cc2db4ee6a7eb150e">NOTIFY</a></div><div class="ttdef"><b>Definition:</b> cshiori.h:33</div></div>
+<div class="ttc" id="cshiori_8h_html_aa991669e994b654522d128fc1964ee5e"><div class="ttname"><a href="cshiori_8h.html#aa991669e994b654522d128fc1964ee5e">cshiori_response_message_new</a></div><div class="ttdeci">struct cshiori_response_message * cshiori_response_message_new(void)</div><div class="ttdoc">SHIORI/3.x Responseをmallocします。 </div><div class="ttdef"><b>Definition:</b> cshiori.c:98</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="cshiori_8h.html">cshiori.h</a></li>
+    <li class="footer">2014年11月10日(月) 00時27分34秒作成 - cshiori / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>
