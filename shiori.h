@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 /**
   * @file
-  * @brief		SHIORI/2.0-SHIORI/3.x 偽AIモジュール インポートヘッダファイル for C
+  * @brief		SHIORI/2.0-SHIORI/3.x 偽AIモジュール インポートヘッダファイル
   *				このファイルはPDS(Public Domain Software)とする。
   *
   * 「栞」とは、「伺か。」用偽AIモジュール規格の名称である。
@@ -28,18 +28,35 @@
 #	include <windows.h>
 #	ifdef __BORLANDC__
 // 		Borland C++
-#		define SHIORI_EXPORT	extern
+#		ifdef __cplusplus
+#			define SHIORI_EXPORT	extern "C"
+#		else
+#			define SHIORI_EXPORT	extern
+#		endif
 #	else
 // 		Visual C++ / Cygwin32 / Mingw32
-#		define SHIORI_EXPORT	extern __declspec(dllexport)
+#		ifdef __cplusplus
+#			define SHIORI_EXPORT	extern "C" __declspec(dllexport)
+#		else
+#			define SHIORI_EXPORT	extern __declspec(dllexport)
+#		endif
 #	endif
 #	define SHIORI_CALL			__cdecl
 #	define MEMORY_HANDLE		HGLOBAL
-#	define SHIORI_MALLOC(len)	GlobalAlloc(GMEM_FIXED, len)
-#	define SHIORI_FREE(ptr)		GlobalFree((HGLOBAL)ptr)
+#	ifdef __cplusplus
+#		define SHIORI_MALLOC(len)	::GlobalAlloc(GMEM_FIXED, len)
+#		define SHIORI_FREE(ptr)		::GlobalFree((HGLOBAL)ptr)
+#	else
+#		define SHIORI_MALLOC(len)	GlobalAlloc(GMEM_FIXED, len)
+#		define SHIORI_FREE(ptr)		GlobalFree((HGLOBAL)ptr)
+#	endif
 #else
 // Other Platform
-#	define SHIORI_EXPORT		extern
+#	ifdef __cplusplus
+#		define SHIORI_EXPORT	extern "C"
+#	else
+#		define SHIORI_EXPORT	extern
+#	endif
 #	define SHIORI_CALL
 #	define MEMORY_HANDLE		char *
 #	define SHIORI_MALLOC(len)	malloc(len)
