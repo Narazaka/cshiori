@@ -220,9 +220,11 @@ char* cshiori_shiori_request_build(const struct cshiori_request_message* const r
 	char* request_line;
 	switch(req->method){
 		case GET:
+			request_line = (char*)malloc(sizeof(char) * (11 + strlen(req->version) + 1));
 			sprintf(request_line, "GET SHIORI/%s", req->version);
 			break;
 		case NOTIFY:
+			request_line = (char*)malloc(sizeof(char) * (14 + strlen(req->version) + 1));
 			sprintf(request_line, "NOTIFY SHIORI/%s", req->version);
 			break;
 		default: return NULL;
