@@ -1,0 +1,655 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>cshiori: cshiori.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cshiori
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('cshiori_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">cshiori.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>SHIORI/3.xインターフェース・パーサ・ビルダ・コンテナ  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div>
+<p><a href="cshiori_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcshiori__request__message.html">cshiori_request_message</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Request.  <a href="structcshiori__request__message.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcshiori__response__message.html">cshiori_response_message</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Response.  <a href="structcshiori__response__message.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a350c9d6cb81908d59427ee96844d1a9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a350c9d6cb81908d59427ee96844d1a9c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LF</b>&#160;&#160;&#160;&quot;\r\n&quot;</td></tr>
+<tr class="separator:a350c9d6cb81908d59427ee96844d1a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9781af7e0f68dc089497428e22566d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c9781af7e0f68dc089497428e22566d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LF_LEN</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a7c9781af7e0f68dc089497428e22566d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc9b2e62314abd55bc3e96435b016fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bc9b2e62314abd55bc3e96435b016fb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#a5bc9b2e62314abd55bc3e96435b016fb">CSHIORI_REQUEST_MESSAGE_REFERENCE_SIZE</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a5bc9b2e62314abd55bc3e96435b016fb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structcshiori__request__message.html" title="SHIORI/3.x Request. ">cshiori_request_message</a> で配列参照可能なreferenceのサイズ <br /></td></tr>
+<tr class="separator:a5bc9b2e62314abd55bc3e96435b016fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc31d4da21a9c10bc33b1ef0926e14d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc31d4da21a9c10bc33b1ef0926e14d6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#adc31d4da21a9c10bc33b1ef0926e14d6">CSHIORI_RESPONSE_MESSAGE_REFERENCE_SIZE</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:adc31d4da21a9c10bc33b1ef0926e14d6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structcshiori__response__message.html" title="SHIORI/3.x Response. ">cshiori_response_message</a> で配列参照可能なreferenceのサイズ <br /></td></tr>
+<tr class="separator:adc31d4da21a9c10bc33b1ef0926e14d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e03f72dc17e197a80f4465b6031554"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6e03f72dc17e197a80f4465b6031554"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#ae6e03f72dc17e197a80f4465b6031554">CSHIORI_SHIORI_REQUEST_PARSE_HEADER_UNIT_SIZE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memdesc:ae6e03f72dc17e197a80f4465b6031554"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="cshiori_8h.html#ab6aa7d1c31e5881cbfd0ca8d60da27e5" title="SHIORI/3.x Requestをパースします。 ">cshiori_shiori_request_parse()</a> で一回に確保するヘッダサイズ <br /></td></tr>
+<tr class="separator:ae6e03f72dc17e197a80f4465b6031554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:aab3f870d0c86f37d7ab29b60deb392a3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3">cshiori_request_method</a> { <a class="el" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>, 
+<a class="el" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3a12a8dcf59c16b5aadfda3a08ba67d529">GET</a>, 
+<a class="el" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3a396912289122c12cc2db4ee6a7eb150e">NOTIFY</a>
+ }</td></tr>
+<tr class="memdesc:aab3f870d0c86f37d7ab29b60deb392a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Request METHOD.  <a href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3">[詳解]</a><br /></td></tr>
+<tr class="separator:aab3f870d0c86f37d7ab29b60deb392a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a709d7a3c40706c55cf579e1a4dc9bf25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#a709d7a3c40706c55cf579e1a4dc9bf25">cshiori_load</a> (const char *dirpath, bool(*<a class="el" href="shiori_8h.html#ab4372ee350092f56ff55f9642737ccf5">load</a>)(const char *))</td></tr>
+<tr class="memdesc:a709d7a3c40706c55cf579e1a4dc9bf25"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x load.  <a href="#a709d7a3c40706c55cf579e1a4dc9bf25">[詳解]</a><br /></td></tr>
+<tr class="separator:a709d7a3c40706c55cf579e1a4dc9bf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce1e9b2ab23c30d118104d2e0f291b1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#adce1e9b2ab23c30d118104d2e0f291b1">cshiori_request</a> (char **const lines, const size_t lines_length, struct <a class="el" href="structcshiori__response__message.html">cshiori_response_message</a> *(*<a class="el" href="shiori_8h.html#a0cd1edda97e492ea49b0e0aa1fe67a71">request</a>)(struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *, struct <a class="el" href="structcshiori__response__message.html">cshiori_response_message</a> *))</td></tr>
+<tr class="memdesc:adce1e9b2ab23c30d118104d2e0f291b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x request.  <a href="#adce1e9b2ab23c30d118104d2e0f291b1">[詳解]</a><br /></td></tr>
+<tr class="separator:adce1e9b2ab23c30d118104d2e0f291b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667d7b471045e1c77f0a611cb628d1a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#a667d7b471045e1c77f0a611cb628d1a8">cshiori_unload</a> (bool(*<a class="el" href="shiori_8h.html#a36a6fa9eefebca2cd43fac8666e2edf4">unload</a>)(void))</td></tr>
+<tr class="memdesc:a667d7b471045e1c77f0a611cb628d1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x unload.  <a href="#a667d7b471045e1c77f0a611cb628d1a8">[詳解]</a><br /></td></tr>
+<tr class="separator:a667d7b471045e1c77f0a611cb628d1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ec2ae50916eb4f949c2bc7a3bcf21e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#a49ec2ae50916eb4f949c2bc7a3bcf21e">cshiori_request_message_new</a> (void)</td></tr>
+<tr class="memdesc:a49ec2ae50916eb4f949c2bc7a3bcf21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Requestをmallocします。  <a href="#a49ec2ae50916eb4f949c2bc7a3bcf21e">[詳解]</a><br /></td></tr>
+<tr class="separator:a49ec2ae50916eb4f949c2bc7a3bcf21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4d35465a67de0257f40df8f3fd1e5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#a4b4d35465a67de0257f40df8f3fd1e5f">cshiori_request_message_delete</a> (struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *req)</td></tr>
+<tr class="memdesc:a4b4d35465a67de0257f40df8f3fd1e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Requestをfreeします。  <a href="#a4b4d35465a67de0257f40df8f3fd1e5f">[詳解]</a><br /></td></tr>
+<tr class="separator:a4b4d35465a67de0257f40df8f3fd1e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf8ad5d0d364873602f99e97afa49e9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#a6cf8ad5d0d364873602f99e97afa49e9">cshiori_request_message_get</a> (struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *req, const char *const name)</td></tr>
+<tr class="memdesc:a6cf8ad5d0d364873602f99e97afa49e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Requestのヘッダを取得します。  <a href="#a6cf8ad5d0d364873602f99e97afa49e9">[詳解]</a><br /></td></tr>
+<tr class="separator:a6cf8ad5d0d364873602f99e97afa49e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae6d4645ad048eb0b2b15c3b7178da6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#a1ae6d4645ad048eb0b2b15c3b7178da6">cshiori_request_message_set</a> (struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *req, char *const name, char *const value)</td></tr>
+<tr class="memdesc:a1ae6d4645ad048eb0b2b15c3b7178da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Requestのヘッダを設定します。  <a href="#a1ae6d4645ad048eb0b2b15c3b7178da6">[詳解]</a><br /></td></tr>
+<tr class="separator:a1ae6d4645ad048eb0b2b15c3b7178da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa991669e994b654522d128fc1964ee5e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcshiori__response__message.html">cshiori_response_message</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#aa991669e994b654522d128fc1964ee5e">cshiori_response_message_new</a> (void)</td></tr>
+<tr class="memdesc:aa991669e994b654522d128fc1964ee5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Responseをmallocします。  <a href="#aa991669e994b654522d128fc1964ee5e">[詳解]</a><br /></td></tr>
+<tr class="separator:aa991669e994b654522d128fc1964ee5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9a8250e3a0af6ab19f1161d6dea8f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#afa9a8250e3a0af6ab19f1161d6dea8f5">cshiori_response_message_delete</a> (struct <a class="el" href="structcshiori__response__message.html">cshiori_response_message</a> *res)</td></tr>
+<tr class="memdesc:afa9a8250e3a0af6ab19f1161d6dea8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Responseをfreeします。  <a href="#afa9a8250e3a0af6ab19f1161d6dea8f5">[詳解]</a><br /></td></tr>
+<tr class="separator:afa9a8250e3a0af6ab19f1161d6dea8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6aa7d1c31e5881cbfd0ca8d60da27e5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#ab6aa7d1c31e5881cbfd0ca8d60da27e5">cshiori_shiori_request_parse</a> (char **const lines, const size_t lines_length)</td></tr>
+<tr class="memdesc:ab6aa7d1c31e5881cbfd0ca8d60da27e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Requestをパースします。  <a href="#ab6aa7d1c31e5881cbfd0ca8d60da27e5">[詳解]</a><br /></td></tr>
+<tr class="separator:ab6aa7d1c31e5881cbfd0ca8d60da27e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00ecf3b1b5e5f84e107a1529e264f77"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#af00ecf3b1b5e5f84e107a1529e264f77">cshiori_shiori_request_build</a> (const struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *const req)</td></tr>
+<tr class="memdesc:af00ecf3b1b5e5f84e107a1529e264f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Requestをビルドします。  <a href="#af00ecf3b1b5e5f84e107a1529e264f77">[詳解]</a><br /></td></tr>
+<tr class="separator:af00ecf3b1b5e5f84e107a1529e264f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ce3763824524b2db50e12216b04a6a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#a02ce3763824524b2db50e12216b04a6a">cshiori_shiori_response_build</a> (const struct <a class="el" href="structcshiori__response__message.html">cshiori_response_message</a> *const res)</td></tr>
+<tr class="memdesc:a02ce3763824524b2db50e12216b04a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Responseをビルドします。  <a href="#a02ce3763824524b2db50e12216b04a6a">[詳解]</a><br /></td></tr>
+<tr class="separator:a02ce3763824524b2db50e12216b04a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35d3f40d826093525cf8a01c76dd5ea"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#ad35d3f40d826093525cf8a01c76dd5ea">cshiori_shiori_response_build_bad_request</a> ()</td></tr>
+<tr class="memdesc:ad35d3f40d826093525cf8a01c76dd5ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Response 400 Bad Requestをビルドします。  <a href="#ad35d3f40d826093525cf8a01c76dd5ea">[詳解]</a><br /></td></tr>
+<tr class="separator:ad35d3f40d826093525cf8a01c76dd5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d8a4be25b4395b2e74d10e5c98af12"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cshiori_8h.html#a38d8a4be25b4395b2e74d10e5c98af12">cshiori_shiori_response_build_internal_server_error</a> ()</td></tr>
+<tr class="memdesc:a38d8a4be25b4395b2e74d10e5c98af12"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHIORI/3.x Response 500 Internal Server Errorをビルドします。  <a href="#a38d8a4be25b4395b2e74d10e5c98af12">[詳解]</a><br /></td></tr>
+<tr class="separator:a38d8a4be25b4395b2e74d10e5c98af12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>SHIORI/3.xインターフェース・パーサ・ビルダ・コンテナ </p>
+<dl class="section author"><dt>著者</dt><dd>Narazaka: <a href="http://narazaka.net/">http://narazaka.net/</a></dd></dl>
+<p>(C) 2014 Narazaka : Licensed under The MIT License - <a href="http://narazaka.net/license/MIT?2014">http://narazaka.net/license/MIT?2014</a> </p>
+</div><h2 class="groupheader">列挙型詳解</h2>
+<a class="anchor" id="aab3f870d0c86f37d7ab29b60deb392a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="cshiori_8h.html#aab3f870d0c86f37d7ab29b60deb392a3">cshiori_request_method</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Request METHOD. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a class="anchor" id="aab3f870d0c86f37d7ab29b60deb392a3ac157bdf0b85a40d2619cbc8bc1ae5fe2"></a>NONE&#160;</td><td class="fielddoc">
+<p>無効 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aab3f870d0c86f37d7ab29b60deb392a3a12a8dcf59c16b5aadfda3a08ba67d529"></a>GET&#160;</td><td class="fielddoc">
+<p>GET </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aab3f870d0c86f37d7ab29b60deb392a3a396912289122c12cc2db4ee6a7eb150e"></a>NOTIFY&#160;</td><td class="fielddoc">
+<p>NOTIFY </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="a709d7a3c40706c55cf579e1a4dc9bf25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cshiori_load </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dirpath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool(*)(const char *)&#160;</td>
+          <td class="paramname"><em>load</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x load. </p>
+<p><a class="el" href="shiori_8c.html#ab4372ee350092f56ff55f9642737ccf5" title="モジュール読み込み直後に呼ばれる ">load()</a>を実行します。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dirpath</td><td>SHIORIのディレクトリパス </td></tr>
+    <tr><td class="paramname">load</td><td><a class="el" href="shiori_8c.html#ab4372ee350092f56ff55f9642737ccf5" title="モジュール読み込み直後に呼ばれる ">load()</a>関数へのポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><a class="el" href="shiori_8c.html#ab4372ee350092f56ff55f9642737ccf5" title="モジュール読み込み直後に呼ばれる ">load()</a>関数は </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;bool load(const char* dirpath);</div>
+</div><!-- fragment --><p> です。</p>
+<dl class="section return"><dt>戻り値</dt><dd>成功/失敗 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adce1e9b2ab23c30d118104d2e0f291b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* cshiori_request </td>
+          <td>(</td>
+          <td class="paramtype">char **const&#160;</td>
+          <td class="paramname"><em>lines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>lines_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcshiori__response__message.html">cshiori_response_message</a> *(*)(struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *, struct <a class="el" href="structcshiori__response__message.html">cshiori_response_message</a> *)&#160;</td>
+          <td class="paramname"><em>request</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x request. </p>
+<p>SHIORI/3.x Requestをパースし、 <a class="el" href="shiori_8c.html#a0cd1edda97e492ea49b0e0aa1fe67a71" title="偽AIリクエスト ">request()</a> 関数に渡して、戻ったSHIORI/3.x Responseを文字列にして返します。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lines</td><td>行単位で分割され改行文字を削除したSHIORI/3.x Request文字列 </td></tr>
+    <tr><td class="paramname">lines_length</td><td>SHIORI/3.x Requestの行数 </td></tr>
+    <tr><td class="paramname">request</td><td><a class="el" href="shiori_8c.html#a0cd1edda97e492ea49b0e0aa1fe67a71" title="偽AIリクエスト ">request()</a>関数へのポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><a class="el" href="shiori_8c.html#a0cd1edda97e492ea49b0e0aa1fe67a71" title="偽AIリクエスト ">request()</a>関数は </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;struct cshiori_response_message* request(struct cshiori_request_message* req, struct cshiori_response_message* res);</div>
+</div><!-- fragment --><p> です。</p>
+<p><a class="el" href="shiori_8c.html#a0cd1edda97e492ea49b0e0aa1fe67a71" title="偽AIリクエスト ">request()</a>にはすでに初期化されたreq, resが渡されます。 reqを参照しながらresを適切に設定してそのまま返せば大丈夫です。</p>
+<p>入力をSHIORI/3.xとしてパースできなかった場合と、request()がNULLを返した場合は、400 Bad Requestの文字列を返します。</p>
+<dl class="section return"><dt>戻り値</dt><dd>SHIORI/3.x Response文字列。失敗した場合NULLを返します。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b4d35465a67de0257f40df8f3fd1e5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cshiori_request_message_delete </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Requestをfreeします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>SHIORI/3.x Request </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6cf8ad5d0d364873602f99e97afa49e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* cshiori_request_message_get </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Requestのヘッダを取得します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>SHIORI/3.x Request </td></tr>
+    <tr><td class="paramname">name</td><td>ヘッダ名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>ヘッダの値。存在しない場合NULLを返します。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a49ec2ae50916eb4f949c2bc7a3bcf21e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a>* cshiori_request_message_new </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Requestをmallocします。 </p>
+<p>methodは0、common headersはNULL、header_sizeは0で初期化されます。 </p><dl class="section return"><dt>戻り値</dt><dd>SHIORI/3.x Request </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ae6d4645ad048eb0b2b15c3b7178da6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cshiori_request_message_set </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *const&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *const&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Requestのヘッダを設定します。 </p>
+<p>これで設定したヘッダはcommon headersのショートカットに反映されません。common headersに含まれないヘッダを扱う場合に使用してください。</p>
+<p>同名のヘッダがある場合上書きします。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>SHIORI/3.x Request </td></tr>
+    <tr><td class="paramname">name</td><td>ヘッダ名 </td></tr>
+    <tr><td class="paramname">value</td><td>ヘッダ値。NULLを指定した場合、ヘッダは削除されます。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>成功時true / 失敗時false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afa9a8250e3a0af6ab19f1161d6dea8f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cshiori_response_message_delete </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcshiori__response__message.html">cshiori_response_message</a> *&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Responseをfreeします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">res</td><td>SHIORI/3.x Response </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa991669e994b654522d128fc1964ee5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcshiori__response__message.html">cshiori_response_message</a>* cshiori_response_message_new </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Responseをmallocします。 </p>
+<p>status_codeは0、common headersはNULLで初期化されます。 </p><dl class="section return"><dt>戻り値</dt><dd>SHIORI/3.x Response </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af00ecf3b1b5e5f84e107a1529e264f77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* cshiori_shiori_request_build </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a> *const&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Requestをビルドします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>SHIORI/3.x Request </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>SHIORI/3.x Request文字列。失敗した場合NULLを返します。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab6aa7d1c31e5881cbfd0ca8d60da27e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcshiori__request__message.html">cshiori_request_message</a>* cshiori_shiori_request_parse </td>
+          <td>(</td>
+          <td class="paramtype">char **const&#160;</td>
+          <td class="paramname"><em>lines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>lines_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Requestをパースします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lines</td><td>行単位で分割され改行文字を削除したSHIORI/3.x Request文字列 </td></tr>
+    <tr><td class="paramname">lines_length</td><td>SHIORI/3.x Requestの行数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>SHIORI/3.x Request。失敗した場合NULLを返します。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a02ce3763824524b2db50e12216b04a6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* cshiori_shiori_response_build </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structcshiori__response__message.html">cshiori_response_message</a> *const&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Responseをビルドします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">res</td><td>SHIORI/3.x Response </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>SHIORI/3.x Response文字列。失敗した場合NULLを返します。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad35d3f40d826093525cf8a01c76dd5ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* cshiori_shiori_response_build_bad_request </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Response 400 Bad Requestをビルドします。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>SHIORI/3.x Response文字列。失敗した場合NULLを返します。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a38d8a4be25b4395b2e74d10e5c98af12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* cshiori_shiori_response_build_internal_server_error </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x Response 500 Internal Server Errorをビルドします。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>SHIORI/3.x Response文字列。失敗した場合NULLを返します。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a667d7b471045e1c77f0a611cb628d1a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cshiori_unload </td>
+          <td>(</td>
+          <td class="paramtype">bool(*)(void)&#160;</td>
+          <td class="paramname"><em>unload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SHIORI/3.x unload. </p>
+<p><a class="el" href="shiori_8c.html#a36a6fa9eefebca2cd43fac8666e2edf4" title="モジュール切り離し直前に呼ばれる ">unload()</a>を実行します。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unload</td><td><a class="el" href="shiori_8c.html#a36a6fa9eefebca2cd43fac8666e2edf4" title="モジュール切り離し直前に呼ばれる ">unload()</a>関数へのポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><a class="el" href="shiori_8c.html#a36a6fa9eefebca2cd43fac8666e2edf4" title="モジュール切り離し直前に呼ばれる ">unload()</a>関数は </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;bool unload(void);</div>
+</div><!-- fragment --><p> です。</p>
+<dl class="section return"><dt>戻り値</dt><dd>成功/失敗 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="cshiori_8h.html">cshiori.h</a></li>
+    <li class="footer">2014年11月10日(月) 00時27分34秒作成 - cshiori / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>
