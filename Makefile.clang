@@ -1,0 +1,11 @@
+CC = clang
+CFLAGS = -O3 -DNDEBUG -Wall
+LDFLAGS = -static
+all:
+	@echo shiori/shiolink
+shiori: shiori.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -shared -o shiori.dll $<
+shiolink: shiolink.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o shiori.exe $<
+doc: $(wildcard *.h)
+	doxygen
