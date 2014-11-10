@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "cshiori", "index.html", [
+    [ "Readme", "md__readme.html", null ],
     [ "クラス", null, [
       [ "クラス一覧", "annotated.html", "annotated" ],
       [ "クラス索引", "classes.html", null ],

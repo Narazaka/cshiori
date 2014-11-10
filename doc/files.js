@@ -1,5 +1,6 @@
 var files =
 [
+    [ "bool.h", "bool_8h_source.html", null ],
     [ "cshiolink.h", "cshiolink_8h.html", "cshiolink_8h" ],
     [ "cshiori.h", "cshiori_8h.html", "cshiori_8h" ],
     [ "shiolink.c", "shiolink_8c.html", "shiolink_8c" ],

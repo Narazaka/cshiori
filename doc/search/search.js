@@ -14,7 +14,8 @@ var indexSectionsWithContent =
   4: "bchimnrsv",
   5: "c",
   6: "gn",
-  7: "cg"
+  7: "cg",
+  8: "r"
 };
 
 var indexSectionNames =
@@ -26,7 +27,8 @@ var indexSectionNames =
   4: "variables",
   5: "enums",
   6: "enumvalues",
-  7: "defines"
+  7: "defines",
+  8: "pages"
 };
 
 function convertToId(search)
