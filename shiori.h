@@ -33,6 +33,13 @@
 #		else
 #			define SHIORI_EXPORT	extern
 #		endif
+#	elif defined(__clang__)
+// 		clang
+#		ifdef __cplusplus
+#			define SHIORI_EXPORT	extern "C"
+#		else
+#			define SHIORI_EXPORT	extern
+#		endif
 #	else
 // 		Visual C++ / Cygwin32 / Mingw32
 #		ifdef __cplusplus
