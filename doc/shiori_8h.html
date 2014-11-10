@@ -45,6 +45,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'検索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
       <li><a href="annotated.html"><span>クラス</span></a></li>
       <li class="current"><a href="files.html"><span>ファイル</span></a></li>
       <li>
@@ -91,7 +92,7 @@ $(document).ready(function(){initNavTree('shiori_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>ページ</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,7 +110,7 @@ $(document).ready(function(){initNavTree('shiori_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>SHIORI/2.0-SHIORI/3.x 偽AIモジュール インポートヘッダファイル for C このファイルはPDS(Public Domain Software)とする。  
+<p>SHIORI/2.0-SHIORI/3.x 偽AIモジュール インポートヘッダファイル このファイルはPDS(Public Domain Software)とする。  
 <a href="#details">[詳解]</a></p>
 
 <p><a href="shiori_8h_source.html">[ソースコード]</a></p>
@@ -155,7 +156,7 @@ SHIORI_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a0cd1edda97e492ea49b0e0aa1fe67a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p>SHIORI/2.0-SHIORI/3.x 偽AIモジュール インポートヘッダファイル for C このファイルはPDS(Public Domain Software)とする。 </p>
+<div class="textblock"><p>SHIORI/2.0-SHIORI/3.x 偽AIモジュール インポートヘッダファイル このファイルはPDS(Public Domain Software)とする。 </p>
 <p>「栞」とは、「伺か。」用偽AIモジュール規格の名称である。 栞規格は、HTTPに酷似したリクエスト・レスポンス型メッセージングを軸とした 疎結合モデルであり、偽AIモジュール側を「栞サーバ」、それを利用する側を 「栞クライアント」と呼ぶ。</p>
 <p>API中、受け渡しに用いられるメモリ領域は、プラットフォーム依存の領域確保 関数で確保され、受け取り側が解放する。 領域確保、解放に用いる関数は以下。 </p><ul>
 <li>Win32プラットフォーム : GlobalAlloc(GMEM_FIXED, len), GlobalFree() </li>
@@ -259,7 +260,7 @@ SHIORI_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="shiori_8h.html">shiori.h</a></li>
-    <li class="footer">2014年11月10日(月) 00時27分34秒作成 - cshiori / 構成: 
+    <li class="footer">2014年11月11日(火) 03時13分27秒作成 - cshiori / 構成: 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

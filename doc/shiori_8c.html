@@ -45,6 +45,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'検索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
       <li><a href="annotated.html"><span>クラス</span></a></li>
       <li class="current"><a href="files.html"><span>ファイル</span></a></li>
       <li>
@@ -91,7 +92,7 @@ $(document).ready(function(){initNavTree('shiori_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>ページ</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,7 +114,7 @@ $(document).ready(function(){initNavTree('shiori_8c.html','');});
 <a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;bool.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="shiori_8h_source.html">shiori.h</a>&quot;</code><br />
 <code>#include &quot;cshiori.c&quot;</code><br />
 <code>#include &quot;shiori_events.c&quot;</code><br />
@@ -126,28 +127,28 @@ $(document).ready(function(){initNavTree('shiori_8c.html','');});
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:ab4372ee350092f56ff55f9642737ccf5"><td class="memItemLeft" align="right" valign="top">SHIORI_EXPORT BOOL SHIORI_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shiori_8c.html#ab4372ee350092f56ff55f9642737ccf5">load</a> (const MEMORY_HANDLE h, long len)</td></tr>
-<tr class="memdesc:ab4372ee350092f56ff55f9642737ccf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">モジュール読み込み直後に呼ばれる  <a href="#ab4372ee350092f56ff55f9642737ccf5">[詳解]</a><br /></td></tr>
-<tr class="separator:ab4372ee350092f56ff55f9642737ccf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772f663882073f27e98bd8ade1265592"><td class="memItemLeft" align="right" valign="top">SHIORI_EXPORT bool SHIORI_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shiori_8c.html#a772f663882073f27e98bd8ade1265592">load</a> (const MEMORY_HANDLE h, long len)</td></tr>
+<tr class="memdesc:a772f663882073f27e98bd8ade1265592"><td class="mdescLeft">&#160;</td><td class="mdescRight">モジュール読み込み直後に呼ばれる  <a href="#a772f663882073f27e98bd8ade1265592">[詳解]</a><br /></td></tr>
+<tr class="separator:a772f663882073f27e98bd8ade1265592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cd1edda97e492ea49b0e0aa1fe67a71"><td class="memItemLeft" align="right" valign="top">SHIORI_EXPORT MEMORY_HANDLE <br class="typebreak" />
 SHIORI_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shiori_8c.html#a0cd1edda97e492ea49b0e0aa1fe67a71">request</a> (const MEMORY_HANDLE h, long *len)</td></tr>
 <tr class="memdesc:a0cd1edda97e492ea49b0e0aa1fe67a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">偽AIリクエスト  <a href="#a0cd1edda97e492ea49b0e0aa1fe67a71">[詳解]</a><br /></td></tr>
 <tr class="separator:a0cd1edda97e492ea49b0e0aa1fe67a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36a6fa9eefebca2cd43fac8666e2edf4"><td class="memItemLeft" align="right" valign="top">SHIORI_EXPORT BOOL SHIORI_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shiori_8c.html#a36a6fa9eefebca2cd43fac8666e2edf4">unload</a> (void)</td></tr>
-<tr class="memdesc:a36a6fa9eefebca2cd43fac8666e2edf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">モジュール切り離し直前に呼ばれる  <a href="#a36a6fa9eefebca2cd43fac8666e2edf4">[詳解]</a><br /></td></tr>
-<tr class="separator:a36a6fa9eefebca2cd43fac8666e2edf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c9546a8002aee4ab639a72a5756a6a"><td class="memItemLeft" align="right" valign="top">SHIORI_EXPORT bool SHIORI_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shiori_8c.html#a29c9546a8002aee4ab639a72a5756a6a">unload</a> (void)</td></tr>
+<tr class="memdesc:a29c9546a8002aee4ab639a72a5756a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">モジュール切り離し直前に呼ばれる  <a href="#a29c9546a8002aee4ab639a72a5756a6a">[詳解]</a><br /></td></tr>
+<tr class="separator:a29c9546a8002aee4ab639a72a5756a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>SHIORI/3.x DLLインターフェース </p>
 <dl class="section author"><dt>著者</dt><dd>Narazaka: <a href="http://narazaka.net/">http://narazaka.net/</a></dd></dl>
 <p>(C) 2014 Narazaka : Licensed under The MIT License - <a href="http://narazaka.net/license/MIT?2014">http://narazaka.net/license/MIT?2014</a> </p>
 </div><h2 class="groupheader">関数詳解</h2>
-<a class="anchor" id="ab4372ee350092f56ff55f9642737ccf5"></a>
+<a class="anchor" id="a772f663882073f27e98bd8ade1265592"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SHIORI_EXPORT BOOL SHIORI_CALL load </td>
+          <td class="memname">SHIORI_EXPORT bool SHIORI_CALL load </td>
           <td>(</td>
           <td class="paramtype">const MEMORY_HANDLE&#160;</td>
           <td class="paramname"><em>h</em>, </td>
@@ -214,12 +215,12 @@ SHIORI_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="a36a6fa9eefebca2cd43fac8666e2edf4"></a>
+<a class="anchor" id="a29c9546a8002aee4ab639a72a5756a6a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SHIORI_EXPORT BOOL SHIORI_CALL unload </td>
+          <td class="memname">SHIORI_EXPORT bool SHIORI_CALL unload </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -239,7 +240,7 @@ SHIORI_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="shiori_8c.html">shiori.c</a></li>
-    <li class="footer">2014年11月10日(月) 00時27分34秒作成 - cshiori / 構成: 
+    <li class="footer">2014年11月11日(火) 03時13分27秒作成 - cshiori / 構成: 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

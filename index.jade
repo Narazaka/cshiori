@@ -53,7 +53,8 @@ html
 				li 「辞書のネタバレ」を防ぐ究極の難読化
 			p 既存のshiori.dllがサポートするスクリプトによらずオリジナルのshiori.dllを作ることが、ゴースト制作の新しい選択肢になります。
 			h2 使用方法
-			p このライブラリはgcc、clang、tccによるコンパイルが可能です。
+			p このライブラリはtcc、gcc、clang、cl(Visual C++)によるコンパイルが可能です。各コンパイラ用Makefileを参照してください。
+			p またCとしてだけではなくC++としてコンパイルできます。各コンパイラごとに対応してください。
 			p shiori_events.cを編集することでSHIORI/3.xのイベントを定義してください。
 			p 手軽に使用したい場合は<code>tcc/tcc.exe -run shiolink.c</code>(make run)で即時実行できます。
 			p shiori.dllを作成したい場合は<code>tcc/tcc.exe -shared -o shiori.dll shiori.c</code>(make shiori)です。
@@ -63,6 +64,8 @@ html
 				| 内部を詳しく知りたい場合は
 				a(href="doc") ドキュメント
 				| を読んでください。実際に必要になる箇所はcshiori.hが大半でしょう。
+			h2 制限事項
+			p 現在cl(Visual C++)によるshiori.exe生成はエラーのあるEXEを吐きます。
 		footer
 			p: small
 				| (C) 2014 Narazaka : Licensed under The MIT License - 
