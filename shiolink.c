@@ -15,4 +15,5 @@
 
 int main(void){
 	cshiolink_mainloop(stdin, stdout, shiori_load, shiori_request, shiori_unload);
+	return 0;
 }
