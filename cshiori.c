@@ -5,13 +5,16 @@ bool cshiori_load(const char* dirpath, bool (*load)(const char*)){
 }
 
 char* cshiori_request(char** const lines, const size_t lines_length, struct cshiori_response_message* (*request)(struct cshiori_request_message*, struct cshiori_response_message*)){
-	struct cshiori_request_message* req = cshiori_shiori_request_parse(lines, lines_length);
+	struct cshiori_request_message* req;
+	struct cshiori_response_message* res;
+	char* str;
+	req = cshiori_shiori_request_parse(lines, lines_length);
 	if(req == NULL) return cshiori_shiori_response_build_bad_request();
-	struct cshiori_response_message* res = cshiori_response_message_new();
+	res = cshiori_response_message_new();
 	res = request(req, res);
 	cshiori_request_message_delete(req);
 	if(res == NULL) return cshiori_shiori_response_build_bad_request();
-	char* str = cshiori_shiori_response_build(res);
+	str = cshiori_shiori_response_build(res);
 	cshiori_response_message_delete(res);
 	return str;
 }
@@ -22,12 +25,12 @@ bool cshiori_unload(bool (*unload)(void)){
 
 struct cshiori_request_message* cshiori_request_message_new(void){
 	struct cshiori_request_message* req = (struct cshiori_request_message*)malloc(sizeof(struct cshiori_request_message));
+	size_t i;
 	req->method = NONE;
 	req->version = NULL;
 	req->id = NULL;
 	req->sender = NULL;
 	req->charset = NULL;
-	size_t i;
 	for(i = 0; i < CSHIORI_REQUEST_MESSAGE_REFERENCE_SIZE; ++i) req->reference[i] = NULL;
 	req->security_level = NULL;
 	req->status = NULL;
@@ -39,6 +42,7 @@ struct cshiori_request_message* cshiori_request_message_new(void){
 }
 
 void cshiori_request_message_delete(struct cshiori_request_message* req){
+	size_t i;
 /*	free(req->id);
 	free(req->sender);
 	free(req->charset);
@@ -46,7 +50,6 @@ void cshiori_request_message_delete(struct cshiori_request_message* req){
 	free(req->security_level);
 	free(req->status);
 	free(req->base_id);*/
-	size_t i;
 	for(i = 0; i < req->header_size; ++i){
 		free(*(req->names + i));
 		free(*(req->values + i));
@@ -97,21 +100,21 @@ bool cshiori_request_message_set(struct cshiori_request_message* req, char* cons
 
 struct cshiori_response_message* cshiori_response_message_new(void){
 	struct cshiori_response_message* res = (struct cshiori_response_message*)malloc(sizeof(struct cshiori_response_message));
+	size_t i;
 	res->status_code = 0;
 	res->version = NULL;
 	res->value = NULL;
 	res->sender = NULL;
 	res->charset = NULL;
-	size_t i;
 	for(i = 0; i < CSHIORI_RESPONSE_MESSAGE_REFERENCE_SIZE; ++i) res->reference[i] = NULL;
 	return res;
 }
 
 void cshiori_response_message_delete(struct cshiori_response_message* res){
+	size_t i;
 	free(res->value);
 	free(res->sender);
 	free(res->charset);
-	size_t i;
 	for(i = 0; i < CSHIORI_RESPONSE_MESSAGE_REFERENCE_SIZE; ++i) free(res->reference[i]);
 	free(res);
 }
@@ -145,15 +148,19 @@ struct cshiori_request_message* cshiori_shiori_request_parse(char** const lines,
 	}
 	/* headers */
 	for(lines_index = 1; lines_index < lines_length - 1; ++lines_index){
+		char* name;
+		size_t name_length;
+		char* value;
+		size_t value_length;
 		line = *(lines + lines_index);
 		header_separator = strstr(line, ": ");
 		if(header_separator == NULL) return NULL;
-		size_t name_length = header_separator - line;
-		char* name = (char*)malloc(sizeof(char) * (name_length + 1));
+		name_length = header_separator - line;
+		name = (char*)malloc(sizeof(char) * (name_length + 1));
 		strncpy(name, line, name_length);
 		name[name_length] = '\0';
-		size_t value_length = strlen(header_separator) - 2;
-		char* value = (char*)malloc(sizeof(char) * (value_length + 1));
+		value_length = strlen(header_separator) - 2;
+		value = (char*)malloc(sizeof(char) * (value_length + 1));
 		strncpy(value, header_separator + 2, value_length);
 		value[value_length] = '\0';
 		if(0 == strncmp(name, reference_pre, reference_pre_length)){
@@ -276,8 +283,8 @@ char* cshiori_shiori_response_build(const struct cshiori_response_message* const
 	size_t status_length = 0, value_length = 0, sender_length = 0, charset_length = 0;
 	size_t reference_length[CSHIORI_REQUEST_MESSAGE_REFERENCE_SIZE];
 	size_t line_length = 1;
-	if(res->version == NULL) return NULL;
 	char* status_message;
+	if(res->version == NULL) return NULL;
 	switch(res->status_code){
 		case 200: status_message = "OK"; break;
 		case 204: status_message = "No Content"; break;
@@ -294,7 +301,7 @@ char* cshiori_shiori_response_build(const struct cshiori_response_message* const
 	content_length += status_length + value_length + sender_length + charset_length;
 	for(i = 0; i < CSHIORI_RESPONSE_MESSAGE_REFERENCE_SIZE; ++i){
 		if(res->reference[i] != NULL){
-			reference_length[i] = 9 + (1 + ((size_t) log10(i))) + 2 + strlen(res->reference[i]);
+			reference_length[i] = 9 + (1 + ((size_t) log10((float)i))) + 2 + strlen(res->reference[i]);
 			line_length ++;
 		}else{
 			reference_length[i] = 0;
@@ -326,20 +333,22 @@ char* cshiori_shiori_response_build(const struct cshiori_response_message* const
 
 char* cshiori_shiori_response_build_bad_request(){
 	struct cshiori_response_message* res = cshiori_response_message_new();
+	char* str;
 	res->version = "3.0";
 	res->status_code = 400;
 	res->charset = "Shift_JIS";
-	char* str = cshiori_shiori_response_build(res);
+	str = cshiori_shiori_response_build(res);
 	cshiori_response_message_delete(res);
 	return str;
 }
 
 char* cshiori_shiori_response_build_internal_server_error(){
 	struct cshiori_response_message* res = cshiori_response_message_new();
+	char* str;
 	res->version = "3.0";
 	res->status_code = 500;
 	res->charset = "Shift_JIS";
-	char* str = cshiori_shiori_response_build(res);
+	str = cshiori_shiori_response_build(res);
 	cshiori_response_message_delete(res);
 	return str;
 }

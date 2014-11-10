@@ -49,15 +49,15 @@ struct cshiori_response_message* shiori_request(struct cshiori_request_message* 
 	}else if(0 == strcmp(req->id, "OnSecondChange")){
 		aitalk_count ++;
 		if(aitalk_count == 90){
-			aitalk_count = 0;
 			static char* const aitalks[] = {
 				"\\h\\s[0]C言語って、\\w4胸キュン？\\e",
 				"\\h\\s[5]MiyoJSもよろしく。\\e",
 				"\\h\\s[0]C++だとconst char*なリテラルをchar*に入れるなっていう警告が出るけど、\\w9\\s[8]まあコンパイルとおるからいいよね？\\e",
-				"\\h\\s[0]古いVC++ではstdbool.hがなくてコンパイルできないけど、\\w9\\s[2]まあてきとうにtrueとfalse定めればいいんじゃないかな。\\e",
+				"\\h\\s[0]古いVC++ではstdbool.hがなくてコンパイルできないから、\\w9\\s[8]マクロでbool定めてるっていう……。\\e",
 				"\\h\\s[6]あとの実装はキミしだい。\\e"
 			};
 			static const size_t aitalks_length = 5;
+			aitalk_count = 0;
 			srand((unsigned)time(NULL));
 			res->status_code = 200;
 			res->value = aitalks[rand() % aitalks_length];

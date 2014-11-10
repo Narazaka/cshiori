@@ -8,7 +8,10 @@ char* cshiolink_request(FILE *in, struct cshiori_response_message* (*request)(st
 	char** lines = NULL;
 	char** lines_new;
 	size_t lines_index = 0;
+	char* str;
+	size_t i;
 	while(true){
+		char* line;
 		if(0 == (lines_index % CSHIOLINK_REQUEST_LINES_BUFFER_STEP)){
 			lines_new = (char**)realloc(lines, sizeof(char*) * (lines_index + CSHIOLINK_REQUEST_LINES_BUFFER_STEP));
 			if(lines_new == NULL){
@@ -21,14 +24,13 @@ char* cshiolink_request(FILE *in, struct cshiori_response_message* (*request)(st
 			}
 			lines = lines_new;
 		}
-		char* line = getline(in);
+		line = getline(in);
 		chomp(line);
 		*(lines + lines_index) = line;
 		lines_index ++;
 		if(0 == strlen(line)) break;
 	}
-	char* str = cshiori_request(lines, lines_index, request);
-	size_t i;
+	str = cshiori_request(lines, lines_index, request);
 	for(i = 0; i < lines_index; ++i){
 		free(*(lines + i));
 	}
@@ -43,10 +45,12 @@ bool cshiolink_unload(bool (*unload)(void)){
 void cshiolink_mainloop(FILE *in, FILE *out, bool (*load)(const char*), struct cshiori_response_message* (*request)(struct cshiori_request_message*, struct cshiori_response_message*), bool (*unload)(void)){
 	while(true){
 		char* line = getline(in);
+		char* str;
+#if defined(WIN32)||defined(_WIN32)||defined(_Windows)||defined(__CYGWIN__)
+		char* str_crlf;
+#endif
 		if(line == NULL) exit(EXIT_FAILURE);
 		if((*line != '*') || (*(line + 2) != ':')) continue;
-		char* str;
-		char* index;
 		switch(*(line + 1)){
 			case 'L':
 				chomp(line);
@@ -65,7 +69,7 @@ void cshiolink_mainloop(FILE *in, FILE *out, bool (*load)(const char*), struct c
 				str = cshiolink_request(in, request);
 				if(str == NULL) str = cshiori_shiori_response_build_internal_server_error();
 #if defined(WIN32)||defined(_WIN32)||defined(_Windows)||defined(__CYGWIN__)
-				char* str_crlf = str;
+				str_crlf = str;
 				str = crlftolf(str_crlf);
 				free(str_crlf);
 #endif
