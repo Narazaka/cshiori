@@ -4,8 +4,8 @@ LDFLAGS = /MT
 all:
 	@echo shiori/shiolink
 shiori: shiori.c
-	$(CC) $(CFLAGS) $(LDFLAGS) /LD /OUT:shiori.dll $<
+	$(CC) $(CFLAGS) $(LDFLAGS) /LD /o shiori.dll $<
 shiolink: shiolink.c
-	$(CC) $(CFLAGS) $(LDFLAGS) /OUT:shiori.exe $<
+	$(CC) $(CFLAGS) $(LDFLAGS) /o shiori.exe $<
 doc: $(wildcard *.h)
 	doxygen
