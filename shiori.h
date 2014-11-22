@@ -17,7 +17,8 @@
   *	                        (ただし、クライアント固有Cライブラリ依存)
   */
 //
-//  2014.11.09                作成 Narazaka: http://narazaka.net/
+//  2003.02.25                作成 <suikyo@yk.rim.or.jp>
+//  2014.11.22                更新 Narazaka: http://narazaka.net/
 //
 //---------------------------------------------------------------------------
 #ifndef SHIORI_H__
@@ -26,15 +27,8 @@
 #if defined(WIN32)||defined(_WIN32)||defined(_Windows)||defined(__CYGWIN__)
 // Win32
 #	include <windows.h>
-#	ifdef __BORLANDC__
-// 		Borland C++
-#		ifdef __cplusplus
-#			define SHIORI_EXPORT	extern "C"
-#		else
-#			define SHIORI_EXPORT	extern
-#		endif
-#	elif defined(__clang__)
-// 		clang
+#	if defined(__BORLANDC__)||defined(__clang__)
+// 		Borland C++ / clang
 #		ifdef __cplusplus
 #			define SHIORI_EXPORT	extern "C"
 #		else
