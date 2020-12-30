@@ -33,6 +33,19 @@ jobs:
     - name: shiolink
       run: .\make.exe -f Makefile.clang shiolink
 
+  windows-gcc:
+
+    runs-on: windows-latest
+  
+    steps:
+    - uses: actions/checkout@v2
+    - name: Add C++ build tools to PATH
+      uses: ilammy/msvc-dev-cmd@v1
+    - name: shiori
+      run: .\make.exe -f Makefile.gcc shiori
+    - name: shiolink
+      run: .\make.exe -f Makefile.gcc shiolink
+
   windows-tcc:
 
     runs-on: windows-latest
