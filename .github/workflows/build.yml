@@ -51,9 +51,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: shiori
-      run: LDFLAGS=-shared make -f Makefile.gcc shiori
+      run: make -f Makefile.gcc.unix shiori
     - name: shiolink
-      run: LDFLAGS=-shared make -f Makefile.gcc shiolink
+      run: make -f Makefile.gcc.unix shiolink
 
   ubuntu-clang:
 
@@ -62,6 +62,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: shiori
-      run: LDFLAGS=-shared make -f Makefile.clang shiori
+      run: make -f Makefile.clang.unix shiori
     - name: shiolink
-      run: LDFLAGS=-shared make -f Makefile.clang shiolink
+      run: make -f Makefile.clang.unix shiolink
