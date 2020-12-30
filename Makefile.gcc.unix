@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -O3 -DNDEBUG -Wall -std=c89
-LDFLAGS =
+LDFLAGS = -lm
 all:
 	@echo shiori/shiolink
 shiori: shiori.c
