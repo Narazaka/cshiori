@@ -4,10 +4,10 @@ LDFLAGS =
 all:
 	@echo shiori/shiolink/run
 shiori: shiori.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -shared -o shiori.dll $<
+	$(CC) -o shiori.dll $< $(CFLAGS) $(LDFLAGS) -shared
 shiolink: shiolink.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -o shiori.exe $<
+	$(CC) -o shiori.exe $< $(CFLAGS) $(LDFLAGS)
 run: shiolink.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -run $<
+	$(CC) -run $< $(CFLAGS) $(LDFLAGS)
 doc: $(wildcard *.h)
 	doxygen

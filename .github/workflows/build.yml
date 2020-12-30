@@ -1,0 +1,80 @@
+name: build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  windows-cl:
+
+    runs-on: windows-latest
+  
+    steps:
+    - uses: actions/checkout@v2
+    - name: Add C++ build tools to PATH
+      uses: ilammy/msvc-dev-cmd@v1
+    - name: shiori
+      run: .\make.exe -f Makefile.cl shiori
+    - name: shiolink
+      run: .\make.exe -f Makefile.cl shiolink
+
+  windows-clang:
+
+    runs-on: windows-latest
+  
+    steps:
+    - uses: actions/checkout@v2
+    - name: Add C++ build tools to PATH
+      uses: ilammy/msvc-dev-cmd@v1
+    - name: shiori
+      run: .\make.exe -f Makefile.clang shiori
+    - name: shiolink
+      run: .\make.exe -f Makefile.clang shiolink
+
+  windows-gcc:
+
+    runs-on: windows-latest
+  
+    steps:
+    - uses: actions/checkout@v2
+    - name: Add C++ build tools to PATH
+      uses: ilammy/msvc-dev-cmd@v1
+    - name: shiori
+      run: .\make.exe -f Makefile.gcc shiori
+    - name: shiolink
+      run: .\make.exe -f Makefile.gcc shiolink
+
+  windows-tcc:
+
+    runs-on: windows-latest
+  
+    steps:
+    - uses: actions/checkout@v2
+    - name: shiori
+      run: .\make.exe -f Makefile.tcc shiori
+    - name: shiolink
+      run: .\make.exe -f Makefile.tcc shiolink
+
+  ubuntu-gcc:
+
+    runs-on: ubuntu-latest
+  
+    steps:
+    - uses: actions/checkout@v2
+    - name: shiori
+      run: make -f Makefile.gcc.unix shiori
+    - name: shiolink
+      run: make -f Makefile.gcc.unix shiolink
+
+  ubuntu-clang:
+
+    runs-on: ubuntu-latest
+  
+    steps:
+    - uses: actions/checkout@v2
+    - name: shiori
+      run: make -f Makefile.clang.unix shiori
+    - name: shiolink
+      run: make -f Makefile.clang.unix shiolink
