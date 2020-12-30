@@ -1,10 +1,10 @@
 CC = gcc
-CFLAGS = -O3 -DNDEBUG -Wall -fPIC
+CFLAGS = -O3 -DNDEBUG -Wall
 LDFLAGS =
 all:
 	@echo shiori/shiolink
 shiori: shiori.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -shared -o shiori.dll $<
+	$(CC) $(CFLAGS) $(LDFLAGS) -fPIC -shared -o shiori.dll $<
 shiolink: shiolink.c
 	$(CC) $(CFLAGS) $(LDFLAGS) -o shiori $<
 doc: $(wildcard *.h)
