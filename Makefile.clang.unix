@@ -1,6 +1,6 @@
 CC = clang
 CFLAGS = -O3 -DNDEBUG -Wall -fPIC
-LDFLAGS = -shared
+LDFLAGS =
 all:
 	@echo shiori/shiolink
 shiori: shiori.c
