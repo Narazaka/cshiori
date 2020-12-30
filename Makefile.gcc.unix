@@ -6,6 +6,6 @@ all:
 shiori: shiori.c
 	$(CC) -fPIC -shared -o shiori.dll $< $(CFLAGS) $(LDFLAGS)
 shiolink: shiolink.c
-	$(CC) -lm -o shiori $< $(CFLAGS) $(LDFLAGS)
+	$(CC) -o shiori $< $(CFLAGS) $(LDFLAGS) -lm
 doc: $(wildcard *.h)
 	doxygen
