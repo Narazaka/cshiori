@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -O3 -DNDEBUG -Wall -std=c17
+CFLAGS = -O3 -DNDEBUG -Wall -std=c11
 LDFLAGS =
 all:
 	@echo shiori/shiolink
