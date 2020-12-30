@@ -1,11 +1,11 @@
 CC = gcc
 CFLAGS = -O3 -DNDEBUG -Wall -std=c11
-LDFLAGS = -lm
+LDFLAGS =
 all:
 	@echo shiori/shiolink
 shiori: shiori.c
 	$(CC) $(CFLAGS) $(LDFLAGS) -fPIC -shared -o shiori.dll $<
 shiolink: shiolink.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -o shiori $<
+	$(CC) $(CFLAGS) $(LDFLAGS) -lm -o shiori $<
 doc: $(wildcard *.h)
 	doxygen
