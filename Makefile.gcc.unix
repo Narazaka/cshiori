@@ -4,8 +4,8 @@ LDFLAGS =
 all:
 	@echo shiori/shiolink
 shiori: shiori.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -fPIC -shared -o shiori.dll $<
+	$(CC) -fPIC -shared -o shiori.dll $< $(CFLAGS) $(LDFLAGS)
 shiolink: shiolink.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -lm -o shiori $<
+	$(CC) -lm -o shiori $< $(CFLAGS) $(LDFLAGS)
 doc: $(wildcard *.h)
 	doxygen
