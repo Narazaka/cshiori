@@ -13,8 +13,8 @@ jobs:
   
     steps:
     - uses: actions/checkout@v2
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v1
+    - name: Add C++ build tools to PATH
+      uses: ilammy/msvc-dev-cmd@v1
     - name: shiori
       run: .\make.exe -f Makefile.cl shiori
     - name: shiolink
@@ -26,8 +26,8 @@ jobs:
   
     steps:
     - uses: actions/checkout@v2
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v1
+    - name: Add C++ build tools to PATH
+      uses: ilammy/msvc-dev-cmd@v1
     - name: shiori
       run: .\make.exe -f Makefile.clang shiori
     - name: shiolink
