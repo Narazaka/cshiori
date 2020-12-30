@@ -16,9 +16,9 @@ jobs:
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1
     - name: shiori
-      run: make.exe -f Makefile.cl shiori
+      run: .\make.exe -f Makefile.cl shiori
     - name: shiolink
-      run: make.exe -f Makefile.cl shiolink
+      run: .\make.exe -f Makefile.cl shiolink
 
   windows-clang:
 
@@ -29,9 +29,9 @@ jobs:
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1
     - name: shiori
-      run: make.exe -f Makefile.clang shiori
+      run: .\make.exe -f Makefile.clang shiori
     - name: shiolink
-      run: make.exe -f Makefile.clang shiolink
+      run: .\make.exe -f Makefile.clang shiolink
 
   windows-tcc:
 
@@ -40,9 +40,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: shiori
-      run: make.exe -f Makefile.tcc shiori
+      run: .\make.exe -f Makefile.tcc shiori
     - name: shiolink
-      run: make.exe -f Makefile.tcc shiolink
+      run: .\make.exe -f Makefile.tcc shiolink
 
   ubuntu-gcc:
 
